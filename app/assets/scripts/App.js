@@ -1,5 +1,5 @@
 import "../styles/styles.css";
 
-if(module.hot) {
-    module.hot.accpet()
+if (module.hot) {
+  module.hot.accpet;
 }

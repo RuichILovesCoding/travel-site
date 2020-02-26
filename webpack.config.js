@@ -5,7 +5,8 @@ const postCSSPlugins = [
   require("postcss-simple-vars"),
   require("postcss-nested"),
   require("autoprefixer"),
-  require("postcss-nested-import")
+  require("postcss-nested-import"),
+  require("postcss-hexrgba")
 ];
 module.exports = {
   entry: "./app/assets/scripts/App.js",
