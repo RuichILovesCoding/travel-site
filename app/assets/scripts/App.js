@@ -1,5 +1,6 @@
 import "../styles/styles.css";
 import Person from "./modules/Person";
+import MobileMenu from "./modules/MobileMenu";
 
 if (module.hot) {
   module.hot.accpet;
@@ -18,3 +19,7 @@ john.greet();
 
 let jane = new Adult("Jane t", "Blue");
 jane.payTaxes();
+
+/*begin build the website*/
+
+let mobileMenu = new MobileMenu();
