@@ -29,7 +29,7 @@ class ClientArea {
         this.contentArea.innerHTML = response.data;
       })
       .catch(() => {
-        this.contentArea.innerHTML = `<p class="client-area__error> this is not correct</p>`;
+        this.contentArea.innerHTML = `<p class="client-area__error"> this is not correct</p>`;
         this.field.value = "";
         this.field.focus();
       });
