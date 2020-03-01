@@ -9,7 +9,11 @@
   }
 
   @mixin atMedium {
+    position: fixed;
     background: rgba($mainBlue, 0.3);
+    &--dark {
+      background-color: rgba(23, 51, 72, 0.85);
+    }
   }
   width: 100%;
 
@@ -26,11 +30,17 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-
+    transition: scale 0.5s ease-out;
     @mixin atMedium {
-      padding: 25px 36px;
       left: auto;
       transform: translateX(0);
+
+      .site-header--dark & {
+        transform: scale(0.6);
+        padding: 0;
+        padding: 5px 12px;
+        margin-top: -5px;
+      }
     }
   }
   &__menu-content {
@@ -41,6 +51,7 @@
     z-index: -10;
     padding-top: 90px;
     text-align: center;
+    @mixin clearfix;
 
     @mixin atMedium {
       z-index: 1;
